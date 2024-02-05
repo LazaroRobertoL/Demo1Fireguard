@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "DemoFireguard_backend": {
+      "main": "src/DemoFireguard_backend/main.mo",
+      "type": "motoko"
+    },
+    "DemoFireguard_frontend": {
+      "dependencies": [
+        "DemoFireguard_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/DemoFireguard_frontend/src/index.html"
+      },
+      "source": [
+        "src/DemoFireguard_frontend/assets",
+        "dist/DemoFireguard_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
