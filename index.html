@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio</title>
+    <style>
+        body {
+            background-image: url('f1.jpg');
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #aade7c;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #fireguard {
+            margin-top: 100px;
+            font-size: 100px;
+        }
+
+        #logo {
+            margin-top: 50px;
+        }
+
+        #botones {
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            border-top: 50px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #b1{
+            background-image: url('gif1.gif');
+            background-size: 200px;
+            color: white;
+
+        }
+
+        #b2{
+            background-image: url('gif1.gif');
+            background-size: 200px;
+            color: white;
+
+        }
+
+        #b4{
+            background-image: url('gif1.gif');
+            background-size: 200px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="logo1.png" alt="logo" style="width: 450px; height: 450px;">
+    </div>
+    <div id="botones">
+        <button id="b1" onclick="window.location.href='registro.php'">Registrarse</button>
+        <button id="b2" onclick="window.location.href='inicio_sesion.html'">Iniciar sesión</button>
+        <button id="b4" onclick="window.location.href='guia.html'">Guia</button>
+        <button id="b4" onclick="window.location.href='monitoreo.html'">Monitoreo</button>
+    </div>
+</body>
+
+</html>
